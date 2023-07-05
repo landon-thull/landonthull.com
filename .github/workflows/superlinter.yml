@@ -17,7 +17,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Lint Codebase
-        uses: github/super-linter@v4
+        uses: super-linter/super-linter/slim@v5
         env:
           VALIDATE_ALL_CODEBASES: true
           VALIDATE_JAVASCRIPT_ES: true
