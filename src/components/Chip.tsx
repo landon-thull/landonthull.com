@@ -6,7 +6,7 @@ interface IProps {
 
 const Chip: React.FC<IProps> = ({ title }) => {
   return (
-    <p className="inline whitespace-nowrap px-4 py-2 bg-black rounded-lg text-blue shadow-md">
+    <p className="inline whitespace-nowrap px-4 py-2 bg-black rounded-lg text-blue shadow-md transition-shadow hover:shadow-lg">
       {title}
     </p>
   )
