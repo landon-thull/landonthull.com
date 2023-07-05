@@ -1,4 +1,4 @@
-function App() {
+const App: React.FC = () => {
 
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-fixed bg-gradient-to-b from-black to-gunmetal">
@@ -12,7 +12,7 @@ function App() {
       </div>
       <h2 className="mt-32 text-3xl text-timber font-extralight">Website Coming Soon</h2>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
