@@ -16,7 +16,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-fixed bg-gradient-to-b from-black from-10% to-gunmetal">
           <Header/>
-          {children}
+          <main>
+            {children}
+          </main>
       </body>
     </html>
   )
