@@ -1,10 +1,5 @@
 name: main-build-and-deploy
 
-on:
-  push:
-    branches:
-      - main
-
 jobs:
   build-landonthull:
     runs-on: ubuntu-latest
