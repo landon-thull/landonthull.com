@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import Header from "@/components/Header";
+import SocialLinks from "@/components/social_links/SocialLinks";
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -16,6 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-fixed bg-gradient-to-b from-black from-10% to-gunmetal">
           <Header/>
+          <SocialLinks/>
           <main>
             {children}
           </main>
