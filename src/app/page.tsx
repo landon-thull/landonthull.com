@@ -1,5 +1,6 @@
 import {Metadata} from "next";
 import HeroSection from "@/components/hero_section/HeroSection";
+import AboutSection from "@/components/about_section/AboutSection";
 
 export const metadata: Metadata = {
   title: "Landon Thull | Software Engineer",
@@ -9,7 +10,10 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-      <HeroSection />
+      <>
+        <HeroSection />
+        <AboutSection />
+      </>
   );
 }
 
