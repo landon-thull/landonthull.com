@@ -1,4 +1,5 @@
 import HeroSectionChip from "@/components/hero_section/HeroSectionChip";
+import {BsChevronDoubleDown} from "react-icons/bs";
 
 const chipTitles: string[] = [
     "Software Engineer",
@@ -13,6 +14,9 @@ const HeroSection = () => {
           {chipTitles.map((chipTitle) => (
               <HeroSectionChip label={chipTitle} key={chipTitle}/>
           ))}
+        </div>
+        <div className="absolute text-timber bottom-1/4">
+          <BsChevronDoubleDown className="w-12 h-12 animate-bounce"/>
         </div>
       </div>
   );
