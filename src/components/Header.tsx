@@ -39,8 +39,8 @@ const Header = () => {
 
   return (
       <header className="fixed w-screen top-0 z-50 h-20 px-6 bg-black flex flex-wrap justify-center">
-        <div className="max-w-7xl grow h-20 flex justify-between items-center">
-          <p className="text-timber text-2xl font-bold">Landon Thull</p>
+        <div className="max-w-7xl grow h-20 flex justify-between md:justify-center items-center">
+          <p className="text-timber md:hidden text-2xl font-bold">Landon Thull</p>
           <nav className="hidden md:flex items-center gap-x-4">
             {navItems}
           </nav>
