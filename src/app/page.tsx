@@ -1,4 +1,5 @@
 import {Metadata} from "next";
+import HeroSection from "@/components/hero_section/HeroSection";
 
 export const metadata: Metadata = {
   title: "Landon Thull | Software Engineer",
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 
 const Page = () => {
   return (
-      <h1>Hello World!</h1>
+      <HeroSection />
   );
 }
 
