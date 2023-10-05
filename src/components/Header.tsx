@@ -19,6 +19,11 @@ const navLinks: NavLink[] = [
     // not implemented yet
     label: "Projects",
     link: "#"
+  },
+  {
+    // not implemented yet
+    label: "Contact",
+    link: "#"
   }
 ];
 
@@ -31,17 +36,17 @@ const Header = () => {
           href={link.link}
           key={link.link}
           onClick={() => setActive(link.link)}
-          className={`${active === link.link ? "text-blue font-semibold" : "text-timber"} text-lg`}
+          className={`${active === link.link ? "text-blue font-semibold" : "text-timber hover:opacity-50"} text-lg`}
       >
         {link.label}
       </Link>
   ));
 
   return (
-      <header className="fixed w-screen top-0 z-50 h-20 px-6 bg-black flex flex-wrap justify-center">
+      <header className="fixed w-screen top-0 z-50 min-h-20 px-6 bg-black flex flex-wrap justify-center">
         <div className="max-w-7xl grow h-20 flex justify-between md:justify-center items-center">
           <p className="text-timber md:hidden text-2xl font-bold">Landon Thull</p>
-          <nav className="hidden md:flex items-center gap-x-4">
+          <nav className="hidden md:flex items-center gap-x-8">
             {navItems}
           </nav>
           <button onClick={() => setOpenNav(!openNav)} className={`inline-block md:hidden ${openNav ? "text-blue" : null}`}>
@@ -50,7 +55,7 @@ const Header = () => {
         </div>
         {
           openNav ?
-              <nav className="flex grow-0 pb-4 gap-y-2 w-full flex-col md:hidden">
+              <nav className="flex bg-black w-screen grow-0 pb-4 gap-y-2 flex-col md:hidden">
                 {navItems}
               </nav> :
               null
