@@ -31,7 +31,7 @@ const SocialLinks = () => {
   ))
 
   return (
-      <div className="fixed left-0 bottom-0 p-4 flex flex-col gap-4 z-10">
+      <div className="hidden md:flex fixed left-0 bottom-0 p-4 flex-col gap-4 z-10">
         {links}
       </div>
   )
