@@ -1,6 +1,6 @@
 const AboutSection = () => {
   return (
-      <section className="text-center md:text-left py-4 flex justify-center">
+      <section className="text-center md:text-left pb-64 py-4 flex justify-center">
         <div className="grow max-w-7xl flex flex-col gap-4">
           <h2 className="text-3xl font-bold text-blue font-mono">// About Me</h2>
           <div className="w-full grid grid-cols-1 md:grid-cols-2">
@@ -16,9 +16,9 @@ const AboutSection = () => {
                 source of challenge with endless opportunity for growth & improvement.
               </p>
             </div>
-            <div className="md:border-l-2 text-left p-4 md:pl-8 border-blue text-timber text-lg">
-              <h4 className="text-2xl font-bold text-blue font-mono">Interests</h4>
-              <ul className="ml-6 text-lg text-timber font-semibold font-mono list-disc">
+            <div className="md:border-l-2 text-left p-4 mt-8 md:mt-0 md:pl-8 border-blue text-timber text-lg">
+              <h4 className="text-2xl font-bold text-center md:text-left mb-4 text-blue font-mono">Interests</h4>
+              <ul className="ml-6 text-lg text-center md:text-left text-timber font-semibold font-mono md:list-disc">
                 <li>Web Development</li>
                 <li>Supply Chain Logistics</li>
                 <li>Hardware Engineering / Robotics</li>
