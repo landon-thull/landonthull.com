@@ -20,7 +20,7 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <section className="w-full md:w-1/3 text-timber">
+      <section className="w-full px-8 lg:px-0 lg:w-1/3  text-timber">
         <h2 className="text-3xl tracking-wide">About Me</h2>
         <p className="p-4 bg-black rounded-lg mt-2 shadow-md">
           I love programming, problem solving, and building things. I&apos;m
