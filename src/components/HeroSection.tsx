@@ -11,13 +11,16 @@ export default function HeroSection() {
         SOFTWARE ENGINEER
       </p>
       <div className="flex gap-x-8 justify-center z-10 mt-8">
-        <a href="https://www.linkedin.com/in/landon-thull-20a987234/">
+        <a
+          href="https://www.linkedin.com/in/landon-thull-20a987234/"
+          target="_blank"
+        >
           <FaLinkedin size={32} className="hover:scale-110 transition-all" />
         </a>
-        <a href="https://github.com/landon-thull">
+        <a href="https://github.com/landon-thull" target="_blank">
           <FaGithub size={32} className="hover:scale-110 transition-all" />
         </a>
-        <a href="https://www.youtube.com/@landonthull">
+        <a href="https://www.youtube.com/@landonthull" target="_blank">
           <FaYoutube size={32} className="hover:scale-110 transition-all" />
         </a>
       </div>
