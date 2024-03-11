@@ -1,16 +1,26 @@
 import markdownToHtml from "@/lib/markdownToHtml";
-import { getProjectBySlug } from "@/lib/projects";
+import { getAllProjects, getProjectBySlug } from "@/lib/projects";
 import { notFound } from "next/navigation";
 import ProjectBody from "./_components/ProjectBody";
 import ProjectHeading from "./_components/ProjectHeading";
 
-interface Params {
-  params: {
-    slug: string;
-  };
+export async function generateStaticParams() {
+  const projects = getAllProjects();
+
+  const slugs: { slug: string }[] = [];
+
+  projects.map((project) => {
+    slugs.push({ slug: project.slug });
+  });
+
+  return slugs;
 }
 
-export default async function Project({ params }: Params) {
+export default async function Project({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const project = getProjectBySlug(params.slug);
 
   if (!project) {
