@@ -16,7 +16,7 @@ export default async function Project({ params }: Params) {
   const content = await markdownToHtml(project.content || "");
 
   return (
-    <main className="bg-neutral-950 min-h-screen text-neutral-200">
+    <main className="bg-neutral-950 pt-16 min-h-screen text-neutral-200">
       <article className="z-10 md:w-1/2 mx-4 md:mx-auto relative min-h-screen">
         <div className="px-8 py-8 z-10 border-x border-neutral-600 min-h-screen">
           <ProjectHeading

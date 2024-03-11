@@ -14,7 +14,7 @@
 }
 
 .markdown a {
-  @apply underline hover:text-neutral-600;
+  @apply underline text-neutral-600 hover:text-neutral-200;
 }
 
 .markdown h1 {

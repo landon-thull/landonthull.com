@@ -5,8 +5,8 @@ export default function Projects() {
   const projects = getAllProjects();
 
   return (
-    <main className="bg-grid-black min-h-screen">
-      <div className="md:w-2/3 px-4 md:px-0 py-16 mx-auto">
+    <main className="bg-grid-black pt-16 min-h-screen">
+      <div className="md:w-2/3 px-4 md:px-0 py-4 mx-auto">
         <h1 className="text-neutral-200 text-4xl mb-4 tracking-wide">
           Projects
         </h1>
