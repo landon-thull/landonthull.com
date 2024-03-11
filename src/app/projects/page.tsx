@@ -18,6 +18,18 @@ export default function Projects() {
                 className="p-4 col-span-1 md:min-h-[500px] text-neutral-200 flex flex-col bg-neutral-950 border border-neutral-600 rounded-xl"
               >
                 <img src={project.coverImage} className="" />
+                <div className="grid w-full grid-cols-3 gap-2">
+                  {project.tags?.map((tag) => {
+                    return (
+                      <span
+                        key={tag}
+                        className="px-2 py-1 text-center border overflow-hidden border-neutral-600 rounded-md"
+                      >
+                        {tag}
+                      </span>
+                    );
+                  })}
+                </div>
                 <div className="border-b-2 border-neutral-600 my-4" />
                 <span className="mb-4 italic">{project.excerpt}</span>
                 <Link

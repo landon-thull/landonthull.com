@@ -6,7 +6,15 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  @apply my-2;
+}
+
+.markdown li {
+  @apply list-item;
+}
+
+.markdown a {
+  @apply underline hover:text-neutral-600;
 }
 
 .markdown h1 {
@@ -18,7 +26,7 @@
 }
 
 .markdown h2 {
-  @apply text-3xl mt-12 mb-4 leading-snug;
+  @apply text-3xl mt-8 mb-2 leading-snug;
 }
 
 .markdown h3 {

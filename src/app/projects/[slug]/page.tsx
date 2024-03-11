@@ -22,6 +22,7 @@ export default async function Project({ params }: Params) {
           <ProjectHeading
             heading={project.title}
             excerpt={project.excerpt}
+            tags={project.tags}
             coverImage={project.coverImage}
           />
           <ProjectBody content={content} />
