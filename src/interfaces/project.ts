@@ -5,4 +5,5 @@ export type Project = {
   coverImage: string;
   excerpt: string;
   content: string;
+  feature: boolean;
 };
