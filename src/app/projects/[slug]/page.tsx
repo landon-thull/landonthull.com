@@ -1,10 +1,14 @@
-import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
 import markdownToHtml from "@/lib/markdownToHtml";
 import { getProjectBySlug } from "@/lib/projects";
-import { Params } from "next/dist/shared/lib/router/utils/route-matcher";
 import { notFound } from "next/navigation";
 import ProjectBody from "./_components/ProjectBody";
 import ProjectHeading from "./_components/ProjectHeading";
+
+interface Params {
+  params: {
+    slug: string;
+  };
+}
 
 export default async function Project({ params }: Params) {
   const project = getProjectBySlug(params.slug);
