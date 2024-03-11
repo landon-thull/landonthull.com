@@ -2,7 +2,7 @@ import { Project } from "@/interfaces/project";
 import { readFileSync, readdirSync } from "fs";
 import matter from "gray-matter";
 import { join } from "path";
-const PROJECTS_DIRECTORY = "projects";
+const PROJECTS_DIRECTORY = "_projects";
 
 export function getProjectSlugs() {
   return readdirSync(PROJECTS_DIRECTORY);
