@@ -1,11 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
 
 export default function Header() {
-  const [active, setActive] = useState<string | null>(null);
-
   return (
     <div className="w-screen fixed z-50 justify-center flex">
       <div className="fixed justify-start w-screen pt-4 h-16 border-b border-neutral-600 z-50 px-8 py-4 bg-neutral-950 text-neutral-200">
