@@ -37,7 +37,7 @@ export default function ProjectHeading({
           position: "relative",
         }}
       >
-        <img className="my-2" src={coverImage} />
+        <img className="my-2 mx-auto" src={coverImage} />
         <hr className="border-neutral-200 border" />
       </div>
     </div>

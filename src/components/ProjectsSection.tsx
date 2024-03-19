@@ -19,7 +19,7 @@ export default function ProjectsSection() {
               key={project.slug}
               className="p-4 col-span-1 md:min-h-[500px] text-neutral-200 flex flex-col bg-neutral-950 border border-neutral-600 rounded-xl"
             >
-              <img alt="" src={project.coverImage} className="" />
+              <img alt="" src={project.coverImage} className="mb-4" />
               <div className="grid w-full grid-cols-3 gap-2">
                 {project.tags?.map((tag) => {
                   return (

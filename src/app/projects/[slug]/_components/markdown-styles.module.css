@@ -6,11 +6,11 @@
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-2;
+  @apply my-2 list-disc;
 }
 
 .markdown li {
-  @apply list-item;
+  @apply list-item ml-6;
 }
 
 .markdown a {
