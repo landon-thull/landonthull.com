@@ -17,6 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <a rel="me" href="https://mastodon.social/@landonthull">
+          Mastodon
+        </a>
+      </head>
       <body className={`bg-neutral-950 ${inter.className}`}>
         <Header />
         {children}
